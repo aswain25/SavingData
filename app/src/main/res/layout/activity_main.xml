@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.savingdata.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"/>
+    <EditText
+        android:id="@+id/etSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSharedPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="handlingSharedPref"/>
+    <Button
+        android:id="@+id/btnRestorePref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load"
+        android:onClick="handlingSharedPref"/>
+
+    <TextView
+        android:id="@+id/tvSharedPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="sqlLiteDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etFirstName"
+        android:hint="first name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etLastName"
+        android:hint="last name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etGender"
+        android:hint="gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSavePerson"
+        android:hint="gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="handlingSQLite"
+        android:text="Save Person"/>
+    <Button
+        android:id="@+id/btnRecievePerson"
+        android:hint="gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="handlingSQLite"
+        android:text="Get All People"/>
+    <TextView
+        android:id="@+id/tvAllPersons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
